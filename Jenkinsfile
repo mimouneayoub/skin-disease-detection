@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+   environment {
+    
+        IMAGE_NAME = "mimouneayoub/skin-disease"
+        IMAGE_TAG = "latest"
+    }
     stages {
         stage('Checkout') {
             steps {
@@ -26,6 +31,12 @@ pipeline {
                 withDockerRegistry(credentialsId: 'docker-cred', url: 'https://index.docker.io/v1/') {
                     sh 'docker run --name skin-disease-web -p 9000:9000 -d mimouneayoub/skin-disease' 
                 }
+            }
+        }
+        stage('Deploy to kubernates cluster'){
+  			steps {
+     			 sh 'kubectl apply -f deployment.yaml'
+                 sh 'kubectl apply -f service.yaml'      
             }
         }
     }
