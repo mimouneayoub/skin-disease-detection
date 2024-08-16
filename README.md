@@ -1,6 +1,7 @@
 # Skin Disease Detection with VGG and SVM
 
-![Skin Disease Detection]
+![Skin Disease Detection](assets/Screenshot-at-2024-08-16-23-39-27.png)
+
 
 ## 📝 Project Overview
 
