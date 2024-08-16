@@ -23,7 +23,7 @@ This MLOps project aims to develop a machine learning model for skin disease det
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3
 - Flask
 - Docker
 - Jenkins
@@ -34,5 +34,5 @@ This MLOps project aims to develop a machine learning model for skin disease det
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/skin-disease-detection.git
+   git clone [https://github.com/mimouneayoub/skin-disease-detection.git]
    cd skin-disease-detection
